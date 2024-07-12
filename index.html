@@ -8,46 +8,72 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    <footer class="bg-[#659f8f] dark:bg-[#313131]">
-        <div class="container">
-            <footer class="bg-[#659f8f] dark:bg-[#313131]">
-                <div class="container px-6 py-12 mx-auto">
-                    <div class="grid">
-                        <div class="sm:col-span-2">
-                            <h1 class="max-w-lg" >Subscribe.</h1>
-                            <div class="flex">
-                                <input id="email" type="text">
-                                <button class="w-full px-6 py-2.5 bg-white">
-                                    Subscribe
-                                </button>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[#313131]">Quick Link</p>
-                            <div class="flex">
-                                <a href="#">Home</a>
-                                <a href="#">Who We Are</a>
-                                <a href="#">Our Philosophy</a>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[#313131]">Technologies</p>
-                            <div class="">
-                                <a href="#">HTML</a>
-                                <a href="#">CSS</a>
-                                <a href="#">JavaScript</a>
-                            </div>
-                        </div>
+    <footer class="bg-teal-600 pb-4">
+        <div class="container px-6 py-12 mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Subscription Section -->
+                <div class="sm:col-span-2">
+                    <h1 class="text-xl font-semibold text-black">Subscribe to our newsletter for updates</h1>
+                    <div class="flex mt-4">
+                        <input id="email" type="email" placeholder="Enter your email" class="w-full p-2.5 rounded-l-lg focus:outline-none border border-gray-300">
+                        <button id="subscribeButton" class="px-6 py-2.5 bg-orange-500 text-white font-semibold rounded-r-lg hover:bg-orange-600">Subscribe</button>
                     </div>
-                    
-                    <hr class="my-6 border-[#d86943]">
-                    
-                    <div class="flex">
-                        <a href="#">
-                            <img class="w-auto h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="">
-                        </a>
-                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div>
+                    <h2 class="text-xl font-semibold text-black">Quick Links</h2>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="text-black hover:underline">Home</a></li>
+                        <li><a href="#" class="text-black hover:underline">Who We Are</a></li>
+                        <li><a href="#" class="text-black hover:underline">Our Philosophy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Technologies Section -->
+                <div>
+                    <h2 class="text-xl font-semibold text-black">Technologies</h2>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="text-black hover:underline">HTML</a></li>
+                        <li><a href="#" class="text-black hover:underline">CSS</a></li>
+                        <li><a href="#" class="text-black hover:underline">JavaScript</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-6 border-orange-600">
+
+            <!-- Social Media Icons Section -->
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-white hover:text-orange-400" aria-label="GitHub">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.2C6.5 2.2 2 6.7 2 12.2c0 4.4 3.2 8.2 7.5 9.1.5.1.7-.2.7-.5v-2.1c-3.1.7-3.7-1.5-3.7-1.5-.5-1.2-1.2-1.6-1.2-1.6-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.5 2.3 1 2.8.8.1-.7.4-1 .7-1.3-2.5-.3-5.2-1.3-5.2-5.8 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.2 1.8-.4 2.7-.4s1.9.1 2.7.4c2.1-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.2 0 4.5-2.7 5.5-5.2 5.8.4.4.7 1 .7 2v3c0 .3.2.6.7.5 4.3-.9 7.5-4.7 7.5-9.1 0-5.5-4.5-10-10-10z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="text-white hover:text-orange-400" aria-label="Twitter">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.23 5.924c-.77.342-1.596.573-2.463.675a4.247 4.247 0 001.865-2.345 8.35 8.35 0 01-2.656 1.017 4.22 4.22 0 00-7.205 3.847 11.976 11.976 0 01-8.705-4.418 4.195 4.195 0 001.307 5.616 4.187 4.187 0 01-1.913-.529v.053a4.22 4.22 0 003.384 4.136 4.229 4.229 0 01-1.906.072 4.224 4.224 0 003.945 2.931 8.468 8.468 0 01-6.26 1.749 11.92 11.92 0 006.452 1.89c7.74 0 11.98-6.418 11.98-11.98 0-.182-.004-.363-.013-.543a8.554 8.554 0 002.1-2.184"></path>
+                    </svg>
+                </a>
+                <a href="#" class="text-white hover:text-orange-400" aria-label="LinkedIn">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                    </svg>
+                </a>
+            </div> 
     </footer>
 
+    <!-- Subscription Button functionality -->
+    <script>
+        document.getElementById("subscribeButton").addEventListener("click", function() {
+            var email = document.getElementById("email").value;
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (emailPattern.test(email)) {
+                alert("Thank you for subscribing with email: " + email);
+            } else {
+                alert("Please enter a valid email address.");
+            }
+        });
+    </script>
 </body>
 </html>
